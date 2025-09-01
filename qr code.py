@@ -1,4 +1,4 @@
-import "qrcode"
+import qrcode
 import tkinter as tk
 from tkinter import messagebox
 
@@ -25,3 +25,4 @@ btn = tk.Button(root, text="สร้าง QR Code", command=generate_qr)
 btn.pack(pady=10)
 
 root.mainloop()
+
