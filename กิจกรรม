@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    float c, f;
+    char again = 'y';
+
+    // While Loop แปลงค่า C เป็น F
+    while (again == 'y' || again == 'Y') {
+        printf("กรอกอุณหภูมิ (C): ");
+        scanf("%f", &c);
+
+        f = (c * 1.8) + 32;
+
+        printf("ฟาเรนไฮต์ = %.2f F\n", f);
+
+        printf("ต้องการคำนวณอีกหรือไม่ (y/n): ");
+        scanf(" %c", &again);
+    }
+
+    // Do While แสดงเลขคู่ 2 ถึง 20
+    int i = 2;
+
+    printf("\nเลขคู่ตั้งแต่ 2 ถึง 20 คือ:\n");
+
+    do {
+        printf("%d ", i);
+        i += 2;
+    } while (i <= 20);
+
+    return 0;
+}
